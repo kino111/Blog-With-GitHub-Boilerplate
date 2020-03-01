@@ -14,8 +14,8 @@ template = {
     "path": "../Galileo"
 }
 enable_jsdelivr = {
-    "enabled": False,
-    "repo": ""
+    "enabled": True,
+    "repo": "kino111/Blog-With-GitHub-Boilerplate@gh-pages"
 }
 
 # 站点设置
@@ -25,7 +25,7 @@ site_build_date = "2019-12-18T16:51+08:00"
 author = "熊猫小A"
 email = "hi@imalan.cn"
 author_homepage = "https://www.imalan.cn"
-description = "只坚持一种正义。我的正义。"
+description = "坚持"
 key_words = ['Maverick', '熊猫小A', 'Galileo', 'blog']
 language = 'zh-CN'
 external_links = [
