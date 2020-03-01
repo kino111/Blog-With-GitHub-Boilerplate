@@ -21,7 +21,7 @@ enable_jsdelivr = {
 # 站点设置
 site_name = "Hitiko Blog"
 site_logo = "${static_prefix}logo.png"
-site_build_date = "2020-3-2T3:00+08:00"
+site_build_date = "2020-3-2T16:51+08:00"
 author = "Hitiko"
 email = "hi@imalan.cn"
 author_homepage = "https://iruna.moe"
