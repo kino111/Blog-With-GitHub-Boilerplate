@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/kino111/kino111.github.io@master/23702efdcd8dc12e7a1ca1d01133e368.json"
+            api: "https://cdn.jsdelivr.net/gh/kino111/kino111.github.io@master/fb81bac5128ce4a415f2622762cdbf7e.json"
         }
     </script>
     
@@ -81,92 +81,92 @@
             </span>
             <div class="ga-content_body">
                 <h2>用户</h2>
-<div class="highlight"><pre><span></span><span class="cp">#用户分3种</span>
-<span class="mi">1</span><span class="err">、</span><span class="n">root用户</span><span class="err">，即超级管理员</span>
-<span class="mi">2</span><span class="err">、拥有</span><span class="n">root</span> <span class="err">权限的用户，可以执行</span><span class="n">sudo命令</span>
-<span class="mi">3</span><span class="err">、普通用户</span>
 
-<span class="cp">#用户文件与配置</span>
-<span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">passwd</span>
-<span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">shadow</span>
-</pre></div>
+<pre><code>#用户分3种
+1、root用户，即超级管理员
+2、拥有root 权限的用户，可以执行sudo命令
+3、普通用户
+
+#用户文件与配置
+/etc/passwd
+/etc/shadow</code></pre>
 <p><strong>1、users命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">users</span> <span class="err">#查看当前在线的用户名称列表</span>
-</pre></div>
-<p><strong>2、adduser命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">adduser</span> <span class="n">demo</span> <span class="err">#添加账号</span>
-</pre></div>
-<p><strong>3、useradd命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">useradd</span> <span class="n">demo</span> <span class="err">#添加用户，默认家目录在</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="err">目录下</span><span class="n">demo目录</span><span class="err">，与用户名一致。</span>
-<span class="n">passwd</span> <span class="n">demo</span> <span class="err">#设置密码，默认添加用户之后没设置密码不允许登录。</span>
-<span class="n">useradd</span> <span class="o">-</span><span class="n">u</span> <span class="mi">2333</span> <span class="n">demo</span> <span class="err">#添加用户并指定用户</span><span class="n">id</span> <span class="err">，一般情况很少使用。</span>
-<span class="n">useradd</span> <span class="o">-</span><span class="n">d</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">testuser</span> <span class="n">demo</span> <span class="err">#添加用户并指定家目录，一般情况很少使用。</span>
-<span class="n">useradd</span> <span class="o">-</span><span class="n">G</span> <span class="n">xxx</span><span class="p">,</span><span class="n">xxx</span> <span class="n">demo</span> <span class="err">#添加用户并加入多个附加组。</span>
-</pre></div>
-<p><strong>4、usermod命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">usermod</span> <span class="o">-</span><span class="n">L</span> <span class="n">demo</span> <span class="err">#锁定用户，不允许登录，相当于手动修改</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">shadow文件中用户密码前加入</span><span class="o">!</span><span class="err">，一个感叹号。</span>
-<span class="n">usermod</span> <span class="o">-</span><span class="n">U</span> <span class="n">demo</span> <span class="err">#解除锁定</span>
-</pre></div>
-<p><strong>5、userdel命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">userdel</span> <span class="n">demo</span> <span class="err">#删除用户，不删除用户家目录数据。</span>
-<span class="n">userdel</span> <span class="o">-</span><span class="n">r</span> <span class="n">demo</span> <span class="err">#删除用户并删除用户家目录。</span>
-<span class="n">userdel</span> <span class="o">-</span><span class="n">rf</span> <span class="n">demo</span> <span class="err">#强制删除用户无论是否登录，并删除用户家目录。</span>
-</pre></div>
-<p><strong>6、passwd命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">passwd</span> <span class="o">-</span><span class="n">l</span> <span class="n">demo</span> <span class="err">#锁定用户，不允许登录，相当于手动修改</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">shadow文件中用户密码前加入</span><span class="o">!!</span><span class="err">，双感叹号。</span>
-<span class="n">passwd</span> <span class="o">-</span><span class="n">u</span> <span class="n">demo</span> <span class="err">#解除锁定</span>
-</pre></div>
-<h2>用户组</h2>
-<div class="highlight"><pre><span></span><span class="cp">#用户组分2种</span>
-<span class="mi">1</span><span class="err">、初始组</span><span class="p">(</span><span class="err">默认组</span><span class="p">)</span>
-<span class="mi">2</span><span class="err">、其他组</span><span class="p">(</span><span class="err">附加组</span><span class="p">)</span>
 
-<span class="cp">#用户组文件与配置</span>
-<span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">group</span>
-<span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">gshadow</span>
-</pre></div>
+<pre><code>users #查看当前在线的用户名称列表</code></pre>
+<p><strong>2、adduser命令</strong></p>
+
+<pre><code>adduser demo #添加账号</code></pre>
+<p><strong>3、useradd命令</strong></p>
+
+<pre><code>useradd demo #添加用户，默认家目录在/home/目录下demo目录，与用户名一致。
+passwd demo #设置密码，默认添加用户之后没设置密码不允许登录。
+useradd -u 2333 demo #添加用户并指定用户id ，一般情况很少使用。
+useradd -d /home/testuser demo #添加用户并指定家目录，一般情况很少使用。
+useradd -G xxx,xxx demo #添加用户并加入多个附加组。</code></pre>
+<p><strong>4、usermod命令</strong></p>
+
+<pre><code>usermod -L demo #锁定用户，不允许登录，相当于手动修改/etc/shadow文件中用户密码前加入!，一个感叹号。
+usermod -U demo #解除锁定</code></pre>
+<p><strong>5、userdel命令</strong></p>
+
+<pre><code>userdel demo #删除用户，不删除用户家目录数据。
+userdel -r demo #删除用户并删除用户家目录。
+userdel -rf demo #强制删除用户无论是否登录，并删除用户家目录。</code></pre>
+<p><strong>6、passwd命令</strong></p>
+
+<pre><code>passwd -l demo #锁定用户，不允许登录，相当于手动修改/etc/shadow文件中用户密码前加入!!，双感叹号。
+passwd -u demo #解除锁定</code></pre>
+<h2>用户组</h2>
+
+<pre><code>#用户组分2种
+1、初始组(默认组)
+2、其他组(附加组)
+
+#用户组文件与配置
+/etc/group
+/etc/gshadow</code></pre>
 <p><strong>1、groups命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">groups</span> <span class="err">#查看当前用户的用户组名称</span>
-</pre></div>
+
+<pre><code>groups #查看当前用户的用户组名称</code></pre>
 <p><strong>2、addgroup命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">groupadd</span> <span class="n">test</span> <span class="err">#添加用户组</span>
-</pre></div>
+
+<pre><code>groupadd test #添加用户组</code></pre>
 <p><strong>3、groupmod命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">groupmod</span> <span class="o">-</span><span class="n">n</span> <span class="n">new_test</span> <span class="n">test</span> <span class="err">#将</span><span class="n">test组名修改为new_test</span>
-</pre></div>
+
+<pre><code>groupmod -n new_test test #将test组名修改为new_test</code></pre>
 <p><strong>4、gpasswd命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">gpasswd</span> <span class="o">-</span><span class="n">a</span> <span class="n">nick</span> <span class="n">new_test</span> <span class="err">#将</span><span class="n">nick用户添加到new_test组</span>
-<span class="n">gpasswd</span> <span class="o">-</span><span class="n">d</span> <span class="n">nick</span> <span class="n">new_test</span> <span class="err">#将</span><span class="n">nick用户从new_test组删除</span>
-</pre></div>
+
+<pre><code>gpasswd -a nick new_test #将nick用户添加到new_test组
+gpasswd -d nick new_test #将nick用户从new_test组删除</code></pre>
 <p><strong>5、groupdel命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">groupdel</span> <span class="n">new_test</span> <span class="err">#删除用户组</span>
-</pre></div>
+
+<pre><code>groupdel new_test #删除用户组</code></pre>
 <p>提示：每添加一个用户会自动创建一个用户组，称为默认组或初始组，这个组是不允许删除的，默认组一般不修改最好，用户<code>id</code>也一样。</p>
 <h2>相关命令</h2>
 <p><strong>1、sudo命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">vim</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">passwd</span> <span class="err">#以另一个用户身份执行命令，通常是</span><span class="n">root用户</span>
-</pre></div>
+
+<pre><code>sudo vim /etc/passwd #以另一个用户身份执行命令，通常是root用户</code></pre>
 <p>提示：普通用户添加执行<code>sudo</code>的方法，在<code>/etc/sudoers</code>文件中添加<code>username ALL=(ALL) ALL</code>即可。</p>
 <p><strong>2、su命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">su</span>   <span class="err">#切换到</span><span class="n">root用户</span><span class="err">，仅切换路径</span>
-<span class="n">su</span> <span class="o">-</span> <span class="err">#切换到</span><span class="n">root用户</span><span class="err">，环境变量和路径一起切换</span>
-<span class="n">su</span> <span class="o">-</span> <span class="n">nick</span> <span class="err">#切换到</span><span class="n">nick用户</span><span class="err">，环境变量和路径一起切换</span>
-</pre></div>
+
+<pre><code>su   #切换到root用户，仅切换路径
+su - #切换到root用户，环境变量和路径一起切换
+su - nick #切换到nick用户，环境变量和路径一起切换</code></pre>
 <p><strong>3、whoami命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">whoami</span> <span class="err">#查看当前用户的名称</span>
-</pre></div>
+
+<pre><code>whoami #查看当前用户的名称</code></pre>
 <p><strong>4、id命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">id</span> <span class="err">#查看当前用户的</span><span class="n">id</span> <span class="err">、组</span><span class="n">id</span> <span class="err">、附加组</span><span class="n">id</span> 
-<span class="n">id</span> <span class="o">-</span><span class="n">un</span> <span class="err">#查看当前用户的名称</span>
-<span class="n">id</span> <span class="o">-</span><span class="n">g</span> <span class="err">#当前用户的组</span><span class="n">id</span>
-<span class="n">id</span> <span class="o">-</span><span class="n">G</span> <span class="err">#当前用户的附加组</span><span class="n">id</span>
-<span class="n">id</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="err">#查看指定用户的</span><span class="n">id</span>
-<span class="n">id</span> <span class="n">root</span> <span class="err">#查看指定用户的</span><span class="n">id</span> <span class="n">gid</span> <span class="n">groupsid</span>
-</pre></div>
+
+<pre><code>id #查看当前用户的id 、组id 、附加组id 
+id -un #查看当前用户的名称
+id -g #当前用户的组id
+id -G #当前用户的附加组id
+id -u root #查看指定用户的id
+id root #查看指定用户的id gid groupsid</code></pre>
 <p><strong>5、who命令</strong></p>
-<div class="highlight"><pre><span></span><span class="n">who</span> <span class="err">#查看当前的在线用户、终端号、</span><span class="n">IP</span><span class="err">、登录时间</span>
-<span class="n">who</span> <span class="o">-</span><span class="n">q</span> <span class="err">#查看在线的用户的用户名，用户数</span>
-</pre></div>
+
+<pre><code>who #查看当前的在线用户、终端号、IP、登录时间
+who -q #查看在线的用户的用户名，用户数</code></pre>
 
             </div>
         </article>
