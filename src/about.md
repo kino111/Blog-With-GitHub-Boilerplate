@@ -2,7 +2,7 @@
 layout: page
 title: 关于
 slug: about
-date: 2017/06/28 17:26:00
+date: 2020/03/02 17:26:00
 status: publish
 author: AlanDecode
 categories: 
@@ -17,6 +17,6 @@ tags:
 
 ## Contact
 
-Email: hi#imalan.cn (replace # with @)
+Email: hi#iruna.moe (replace # with @)
 
-Telegram：[AlanDecode](https://t.me/alandecode)
+Telegram：[Hitiko](https://t.me/Hitiko_Net)
