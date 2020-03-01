@@ -58,11 +58,11 @@ nav = [
     }
 ]
 
-#social_links = [
+social_links = [
     {
-        "name": "Telegram",
-        "url": "https://t.me/Hitiko_Net",
-        "icon": "gi gi-telegram"
+        "name": "Twitter",
+        "url": "https://twitter.com/AlanDecode",
+        "icon": "gi gi-twitter"
     },
     {
         "name": "GitHub",
