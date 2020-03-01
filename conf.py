@@ -60,11 +60,20 @@ nav = [
 
 social_links = [
     {
-        "name": "Telegram",
-        "url": "https://t.me/Hitiko_Net",
-        "icon": "gi gi-telegram"
+        "name": "Twitter",
+        "url": "https://twitter.com/AlanDecode",
+        "icon": "gi gi-twitter"
+    },
+    {
+        "name": "GitHub",
+        "url": "https://github.com/AlanDecode",
+        "icon": "gi gi-github"
+    },
+    {
+        "name": "Weibo",
+        "url": "https://weibo.com/5245109677/",
+        "icon": "gi gi-weibo"
     }
-
 ]
 
 head_addon = r'''
