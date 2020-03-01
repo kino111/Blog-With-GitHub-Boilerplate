@@ -30,9 +30,9 @@ key_words = ['Maverick', '熊猫小A', 'Galileo', 'blog']
 language = 'zh-CN'
 external_links = [
     {
-        "name": "Moerats Blog",
-        "url": "https://moerats.com",
-        "brief": "小萌鼠"
+        "name": "Maverick",
+        "url": "https://github.com/AlanDecode/Maverick",
+        "brief": "🏄‍ Go My Own Way."
     },
     {
         "name": "三無計劃",
@@ -55,6 +55,24 @@ nav = [
         "name": "关于",
         "url": "${site_prefix}about/",
         "target": "_self"
+    }
+]
+
+social_links = [
+    {
+        "name": "Twitter",
+        "url": "https://twitter.com/AlanDecode",
+        "icon": "gi gi-twitter"
+    },
+    {
+        "name": "GitHub",
+        "url": "https://github.com/AlanDecode",
+        "icon": "gi gi-github"
+    },
+    {
+        "name": "Weibo",
+        "url": "https://weibo.com/5245109677/",
+        "icon": "gi gi-weibo"
     }
 ]
 
