@@ -21,23 +21,23 @@ enable_jsdelivr = {
 # 站点设置
 site_name = "Hitiko Blog"
 site_logo = "${static_prefix}logo.png"
-site_build_date = "2019-12-18T16:51+08:00"
+site_build_date = "2020-3-2T3:00+08:00"
 author = "Hitiko"
 email = "hi@imalan.cn"
 author_homepage = "https://iruna.moe"
 description = "今天该吃哪位小朋友呢?"
-key_words = ['Maverick', '熊猫小A', 'Galileo', 'blog']
+key_words = ['Maverick', 'Hitiko', 'Galileo', 'blog']
 language = 'zh-CN'
 external_links = [
     {
         "name": "Moerats",
         "url": "https://moerats.com",
-        "brief": "小萌鼠"
+        "brief": "小萌鼠🐹"
     },
     {
         "name": "三無計劃",
         "url": "https://www.imalan.cn",
-        "brief": "熊猫小A的主页。"
+        "brief": "熊猫小A的主页"
     }
 ]
 nav = [
@@ -58,7 +58,7 @@ nav = [
     }
 ]
 
-social_links = [
+#social_links = [
     {
         "name": "Telegram",
         "url": "https://t.me/Hitiko_Net",
